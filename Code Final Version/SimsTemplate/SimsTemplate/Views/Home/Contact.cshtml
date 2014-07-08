@@ -1,0 +1,76 @@
+﻿@model SimsTemplate.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "Contact";
+    
+    <!-- Author: Jivanjot Brar -->
+}
+
+<div id="pageContent">
+
+    <h2>Contact Us</h2>
+
+    <p>If you have any issues, questions and concerns please fill in the form below with your correct information and we will get back to as soon as possible.</p>
+
+    <br />
+    @using (Html.BeginForm())
+    { 
+        @Html.ValidationSummary(true) 
+        <fieldset class="contactForm">
+            <legend><i>Contact</i></legend>
+
+            <h3 style="color: #FF0000;">@ViewBag.EmailMsg</h3>
+            <h4><i>@ViewBag.Msg</i></h4>
+            <h4 style="color: #FF0000; margin-left: 20px;"><i>@ViewBag.Error</i></h4>
+
+
+            <br />
+            <table>
+                <tr>
+                    <td class="editor-label">
+                        @Html.LabelFor(model => model.Name)
+                    </td>
+                    <td class="editor-field">
+                        @Html.TextBoxFor(model => model.Name)
+                        @Html.ValidationMessageFor(model => model.Name)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="editor-label">
+                        @Html.LabelFor(model => model.Email)
+                    </td>
+                    <td class="editor-field">
+                        @Html.TextBoxFor(model => model.Email)
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="editor-label">
+                        @Html.LabelFor(model => model.Subject)
+                    </td>
+                    <td class="editor-field">
+                        @Html.TextBoxFor(model => model.Subject)
+                        @Html.ValidationMessageFor(model => model.Subject)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="editor-label">
+                        @Html.LabelFor(model => model.Comment)
+                    </td>
+                    <td class="editor-field">
+                        @Html.TextAreaFor(model => model.Comment, 8, 55, null)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Comment)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit">
+                        <input type="submit" value="Send" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset> 
+    }
+</div>
+
+

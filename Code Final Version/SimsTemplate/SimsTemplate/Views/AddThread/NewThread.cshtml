@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "NewThread";
+}
+
+<script type="text/javascript">
+    function ThreadValidate() {
+        if (document.forms["threadForm"]["threadTitle"].value == "")
+            document.getElementById("threadTitle_error").style.display = "inline";
+        else
+            document.getElementById("threadTitle_error").style.display = "none";
+
+        if (document.forms["threadForm"]["threadContent"].value == "")
+            document.getElementById("threadContent_error").style.display = "inline";
+        else
+            document.getElementById("threadContent_error").style.display = "none";
+
+        return document.forms["threadForm"]["threadContent"].value != "" && document.forms["threadForm"]["threadContent"].value != "";
+    }
+</script>
+
+<div id="forum_breadcrumbs">
+    @Html.ActionLink("Home", "Index", "Forum") / @Html.ActionLink((string)ViewBag.SubforumName, "Thread", "ThreadList", new { id = ViewBag.SubforumID }, null) / Add Thread
+</div>
+
+<form method="post" action="Create" onsubmit="return ThreadValidate();" name="threadForm">
+    <fieldset class="forum_newthread_fieldset">
+        <legend>Add Thread</legend>
+        <h5>Thread Title</h5>
+        <input name="subforumID" value="@ViewBag.SubforumID" readonly="readonly" style="display: none;" />
+        <input name="userID" value="@ViewBag.UserID" readonly="readonly" style="display: none;" />
+        <input class="forum_threadtitle_input" name="threadTitle" type="text" /><br />
+        <div id="threadTitle_error" style="display: none; color: Red;">Thread title is required.</div>
+        <h5>Post</h5>
+        <textarea class="forum_threadcontent_input" name="threadContent" cols="50" rows="10"></textarea><br />
+        <div id="threadContent_error" style="display: none; color: Red;">Post content is required.</div><br />
+        <input id="Submit1" type="submit"
+            value="Submit" style="padding: 3px;" />
+    </fieldset>
+</form>

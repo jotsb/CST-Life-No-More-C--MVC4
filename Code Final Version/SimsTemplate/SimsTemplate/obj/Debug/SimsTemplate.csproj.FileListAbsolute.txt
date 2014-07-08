@@ -1,0 +1,342 @@
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\SimsTemplate.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\SimsTemplate.pdb
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\Antlr3.Runtime.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\EntityFramework.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Infrastructure.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Optimization.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Razor.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebGrease.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\EntityFramework.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Razor.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.pdb
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\SimsTemplate.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\SimsTemplate.pdb
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\Antlr3.Runtime.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\EntityFramework.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Infrastructure.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Optimization.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Razor.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebGrease.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\EntityFramework.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Razor.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+K:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.csprojResolveAssemblyReference.cache
+K:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.pdb
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\SimsTemplate.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\SimsTemplate.pdb
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\Antlr3.Runtime.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\EntityFramework.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Infrastructure.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Optimization.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Razor.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebGrease.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\EntityFramework.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Razor.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+G:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.csprojResolveAssemblyReference.cache
+G:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.pdb
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\SimsTemplate.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\SimsTemplate.pdb
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\Antlr3.Runtime.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\EntityFramework.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Infrastructure.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Optimization.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Razor.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebGrease.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\EntityFramework.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Razor.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.csprojResolveAssemblyReference.cache
+I:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.pdb
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Helpers.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\NuGet.Core.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.dll
+K:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Helpers.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\NuGet.Core.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.dll
+H:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.xml
+H:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.csprojResolveAssemblyReference.cache
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\SimsTemplate.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\SimsTemplate.pdb
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\Antlr3.Runtime.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\EntityFramework.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Helpers.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Infrastructure.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\NuGet.Core.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Optimization.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Razor.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebGrease.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Razor.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\EntityFramework.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+M:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.csprojResolveAssemblyReference.cache
+M:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.dll
+M:\New folder\dev\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.pdb
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Helpers.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\NuGet.Core.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.dll
+G:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.xml
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Helpers.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\NuGet.Core.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.dll
+I:\New folder\dev\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\SimsTemplate.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\SimsTemplate.pdb
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\Antlr3.Runtime.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\EntityFramework.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Helpers.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\NuGet.Core.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Net.Http.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Http.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Optimization.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Razor.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\WebGrease.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Razor.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Administration.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\EntityFramework.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\Newtonsoft.Json.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Net.Http.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Net.Http.Formatting.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Net.Http.WebRequest.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Helpers.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Http.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Http.WebHost.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.Mvc.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Deployment.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\System.Web.WebPages.Razor.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\WebMatrix.Data.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\WebMatrix.WebData.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.Core.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.csprojResolveAssemblyReference.cache
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.dll
+C:\Users\BrarJSingh\Dropbox\FALL2012 CST Project\DVD\Project Documentation and Code\Web\Code Final Version\SimsTemplate\SimsTemplate\obj\Debug\SimsTemplate.pdb

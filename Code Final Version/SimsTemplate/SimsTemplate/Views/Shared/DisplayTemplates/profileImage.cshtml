@@ -1,0 +1,13 @@
+﻿ @model System.String
+
+ <div id="cropContainer">
+
+     <div id="cropPreview">
+        <img src="@(String.IsNullOrEmpty(Model) ? "" : Model)" id="preview" alt="" />
+    </div>
+
+     <div id="cropDisplay">
+         <img src="@(String.IsNullOrEmpty(Model) ? "" : Model)" id="profileImageEditor" alt="" />
+    </div>
+
+ </div>

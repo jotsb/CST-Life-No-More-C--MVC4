@@ -1,0 +1,58 @@
+﻿<!--
+    Author: Guillaume Jacques
+    view of the comparison of the characters selected on the leaderboard page
+-->
+
+@model IEnumerable<SimsTemplate.Models.Character>
+@Styles.Render("~/Content/Leaderboard_Style.css")
+@Html.ActionLink("Back To LeaderBoard Page", "Index", "LeaderBoard")
+
+<br /><br /><br />
+<div id="leaderBoardTable">
+    <table>
+        <tr style="background-color: #902900; color: #FFF;">
+            <th>Name</th>
+            <th>Grades</th>
+            <th>Money</th>
+            <th>Global Score</th>
+            <th>Hunger</th>
+            <th>Sanity</th>
+            <th>Bladder</th>
+            <th>Energy</th>
+            <th>Fun</th>
+
+        </tr>
+        @if (Model != null)
+        {
+            int count = 1;
+            foreach (var c in Model)
+            {
+                <tr class="@(count % 2 == 0 ? "even" : "odd")">
+                    <td style="text-align:center;">@c.name</td>
+                    <td style="text-align:center;">@c.grades</td>
+                    <td style="text-align:center;">@c.money</td>
+                    <td style="text-align:center;">@c.global_score</td>
+                    <td style="text-align:center;">@c.hunger</td>
+                    <td style="text-align:center;">@c.sanity</td>
+                    <td style="text-align:center;">@c.bladder</td>
+                    <td style="text-align:center;">@c.energy</td>
+                    <td style="text-align:center;">@c.fun</td>
+
+                </tr>
+                count++;
+            }
+        }
+
+            <tr>
+                <td class="currentLoggedUser">Comparison Results</td>
+                <td class="@(@ViewBag.comprison_grade >= 0 ? "pos" : "neg")">@ViewBag.comprison_grade</td>
+                <td class="@(@ViewBag.comprison_money >= 0 ? "pos" : "neg")">@ViewBag.comprison_money</td>
+                <td class="@(@ViewBag.comprison_score >= 0 ? "pos" : "neg")">@ViewBag.comprison_score</td>
+                <td class="@(@ViewBag.comprison_hunger >= 0 ? "pos" : "neg")">@ViewBag.comprison_hunger</td>
+                <td class="@(@ViewBag.comprison_sanity >= 0 ? "pos" : "neg")">@ViewBag.comprison_sanity</td>
+                <td class="@(@ViewBag.comprison_bladder >= 0 ? "pos" : "neg")">@ViewBag.comprison_bladder</td>
+                <td class="@(@ViewBag.comprison_energy >= 0 ? "pos" : "neg")">@ViewBag.comprison_energy</td>
+                <td class="@(@ViewBag.comprison_fun >= 0 ? "pos" : "neg")">@ViewBag.comprison_fun</td>
+            </tr>
+    </table>
+</div>

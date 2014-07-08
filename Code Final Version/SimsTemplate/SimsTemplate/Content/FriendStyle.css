@@ -1,0 +1,161 @@
+﻿
+body{height:100%;}
+
+.welcome_message 
+{
+    text-align:center;
+    border-bottom:solid 1px;
+    width: 100%;
+}
+
+.friends_page_body 
+{
+    width: 100%;
+    float: left;
+    height: 100%;
+
+}
+
+.friends_page_top 
+{
+    text-align:center;
+    border-bottom:solid 1px;
+    float:right;
+    width:100%;
+}
+
+.friends_list 
+{
+    text-align:center;
+    border-left:solid 1px;
+    width:80%;
+    float:right;
+    height: 100%;
+}
+
+.dynamic_friends_content 
+{
+    text-align:center;
+    width:19%;
+    float: left;
+    height: 100%;
+}
+
+.query_result 
+{
+    text-align:center;
+    float:right;
+    width:100%;
+}
+
+.view_table 
+{
+    width:100%;
+    margin: 8px 8px 8px 8px;
+    padding:10px 10px 10px 10px;
+}
+
+.view_table td 
+{
+    text-align:left;
+}
+
+
+.title_block 
+{
+    text-align: center;
+    padding: 8px;
+    border: solid 1px;
+    margin: 8px;
+    background-color: lightblue;
+    font-weight:bold;
+}
+
+.generic 
+{
+
+    width:100%;
+
+
+}
+
+.generic_narrow
+{
+    text-align:center;
+    margin-left:15px;
+    margin-right:15px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.tri_col 
+{
+    width:100%;
+    margin:8px 8px 8px 8px;
+    padding: 8px 8px 8px 8px;
+    text-align:center;
+}
+
+.tri_col tr 
+{
+    padding-left: 8px;
+}
+
+.tri_col td
+{
+    padding-left: 8px; 
+}
+
+tri_col_narrow 
+{
+    text-align:center;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+
+ul.noindent {
+margin: 0;
+padding: 0;
+list-style-type:none;
+text-align:left;
+
+margin-left: 10px;
+}
+
+ul.noident li {
+list-style-type:none;
+margin: 0;
+padding: 5px 0 5px 0;
+
+}
+
+
+
+
+ul.two-columns li
+{
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Clear Fix */
+.clearfix:after
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+

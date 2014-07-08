@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Reply To Topic";
+}
+<script type="text/javascript">
+    function PostValidate() {
+        if (document.forms["postForm"]["postContent"].value == "") {
+            document.getElementById("postContent_error").style.display = "inline";
+            return false;
+        }
+        return true;
+    }
+</script>
+
+<h2>Reply to topic @Html.ActionLink((string)ViewBag.ThreadTitle, "Index", "Posts", new { threadID = ViewBag.ParentThread }, null)</h2>
+
+<form method="post" action="Posts\AddPost" name="postForm" onsubmit="return PostValidate();">
+    <input type="text" readonly="readonly" name="parentThread" style="display: none;" value="@ViewBag.ParentThread" />
+    <textarea name="postContent" cols="50" rows="10"></textarea><br />
+    <div id="postContent_error" style="display: none; color: Red;">Post content required.</div><br />
+    <input id="Submit1" type="submit"
+    value="submit" />
+</form>

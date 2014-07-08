@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    
+    <!-- Author: Jivanjot Brar -->
+}
+<div id="slider">
+    <div id="slideshow">
+        <ul>
+            <li>
+                <img src="@Url.Content("~/Images/SliderImages/image4.jpg")" alt="" />
+            </li>
+            <li>
+                <img src="@Url.Content("~/Images/SliderImages/image2.jpg")" alt="" />
+            </li>
+            <li>
+                <img src="@Url.Content("~/Images/SliderImages/image1.jpg")" alt="" />
+            </li>
+            <li>
+                <img src="@Url.Content("~/Images/SliderImages/image3.jpg")" alt="" />
+            </li>
+            <li>
+                <img src="@Url.Content("~/Images/SliderImages/image5.jpg")" alt="" />
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="pageContent">
+    <div id="gameInfo">
+        <div class="topicHeading" id="about">
+            About</div>
+        <div id="homeImage">
+            <img src="@Url.Content("~/Images/Logo2.png")" alt="Image" height="160px" width="170px" style="border-radius: 10px;"/></div>
+        <div class="topicContent">
+            <p><b>CST: Life No More</b> is a game created by the Technical Programming students in 
+            Computer Systems Technology Program. CST: Life no more is a single player RPG style game 
+                that emulates life at BCIT for students enrolled in the Computer Systems Technology 
+                program. The game is a satirical look at the stresses of school life at BCIT. Players 
+                play the game by navigating through the school and attend lectures and labs by 
+                replacing classes with minigames.</p>
+        </div>
+    </div>
+    <div id="newsFeed">
+        <div class="topicHeading" id="feed">
+            News Feed</div>
+        <div class="topicContent">
+            @*Html.Action("Index", "NewsFeed")*@
+        </div>
+    </div>
+</div>
+<!-- ---------------SLIDER--------------- -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+<script src="@Url.Content("~/Content/js/craftyslide.min.js")" type="text/javascript"></script>
+<!--<script src="../../Content/js/craftyslide.min.js" type="text/javascript"></script>-->
+<script type="text/javascript">
+    $("#slideshow").craftyslide({
+        'width': 1170,
+        'height': 420,
+        'pagination': false,
+        'fadetime': 1200,
+        'delay': 4000
+    });
+</script>
+<!-- ---------------SLIDER END--------------- -->

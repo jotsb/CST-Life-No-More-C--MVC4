@@ -1,0 +1,49 @@
+﻿<!--
+@{
+    ViewBag.Title = "Chat";
+    Layout = "~/Views/Shared/_ChatLayout.cshtml";
+}
+-->
+<body>
+        
+    <script src="../Content/js/ChatSystem/ChatClient.js"></script>
+    <script src="../Content/js/ChatSystem/Appearance.js"></script>
+    <script src="../Content/js/ChatSystem/Main.js"></script>
+
+    <div class="MainDiv">
+                    
+        <div class="LeftColumn">
+            <div class="UpButton">
+
+            </div>
+
+                
+            <div class="ChannelButtonContainer">
+
+                <ul> 
+                </ul>
+
+            </div>
+
+            <div class="DownButton" ></div>
+
+        </div>
+        <div class="RightColumn">
+                
+            <div class="RightContainer">
+                    
+                <div class="MessageWindow">
+                        
+                    <ul>
+                    </ul>
+
+                </div>
+
+                <div class="TextField">
+                    <textarea class="TextInputBox" type="text" id="msg_box"></textarea>
+                    <input onclick="chatInterface.sendMessage()" class="SendMessageButton" type="button" value="Send" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,98 @@
+﻿@model Dictionary<string, List<SimsTemplate.Models.User>>
+
+@{
+    ViewBag.Title = "Search Result";
+    Layout = "~/Views/Shared/_FriendListLayout.cshtml";
+    
+    <!-- Author: Jivanjot Brar -->
+}
+
+<!-- JavaScript for showing the confirmation box -->
+<script type="text/javascript">
+    //Confirmation box sample
+    function ConfirmationCancelRequest() {
+        var result = confirm("Are you sure you want to Cancel the Friend Request?");
+        if (result == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    function ConfirmationRemoveFriend() {
+        var result = confirm("Are you sure you want to remove a friend?");
+        if (result == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    function ConfirmationFriendRequest() {
+        var result = confirm("Are you sure you want to sent a friend request");
+        if (result == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+</script>
+<!-- JavaScript End -->
+
+@{
+    <br />
+    <h1>@ViewBag.SearchMessage</h1>
+    if (Model != null)
+    {
+        var pendingRequests = Model["pending"];
+        var friends = Model["friend"];
+        foreach (var item in Model["searchResult"])
+        {
+    <div class="find-column-left1">
+        <table>
+            <tr>
+                <td class="friendImg">
+                    <a href="../ViewProfile/?id=@item.id">
+                        <img alt="Image" title="@item.firstname @item.lastname" src = "@Url.Content(item.image_url)" width="100px" height="106px" /></a>
+                </td>
+                <td class="friendName">
+                    <a href="../ViewProfile/?id=@item.id">@char.ToUpper(item.firstname[0])@item.firstname.Substring(1).ToLower()
+                        @char.ToUpper(item.lastname[0])@item.lastname.Substring(1).ToLower() - (@char.ToUpper(item.username[0])@item.username.Substring(1).ToLower())</a>
+                </td>
+                <td class="addFriendBtn">
+                    @if (pendingRequests.Contains(item))
+                    {
+                        <p class="pendingRequestMsg"><i>Pending Request</i></p>
+                        <p>
+                            <a href="RemoveRequest/?friendID=@item.id" onclick="javascript: return ConfirmationCancelRequest();">Cancel Request</a>
+                        </p>
+                    }
+                    else if (friends.Contains(item))
+                    {
+                        using (Html.BeginForm("Edit", "FriendList", FormMethod.Post))
+                        {
+                        <p>
+                            <input name="@item.id" type="submit" value="UnFriend" style="padding: 5px; font-family: Verdana; font-size: 12px;" onclick="javascript: return ConfirmationRemoveFriend();"/>
+                        </p>
+                        }
+                    }
+                    else
+                    {
+                        using (Html.BeginForm("Find", "FriendList", FormMethod.Post))
+                        {
+                        <p>
+                            <input name="@item.id" type="submit" value="Add Friend" style="padding: 5px;  font-family: Verdana; font-size: 12px;" onclick="javascript: return ConfirmationFriendRequest()"/>
+                        </p>
+                        }
+                    }
+                </td>
+            </tr>
+        </table>
+        <hr />
+    </div>
+        }
+    }   
+}

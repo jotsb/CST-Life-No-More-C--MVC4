@@ -1,0 +1,34 @@
+﻿@using SimsTemplate.Models
+@model IEnumerable<Character>
+
+@{
+    ViewBag.Title = "Character List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table>
+    <tr>
+        <td>Character Name</td><td>User Account</td><td>Sex</td>
+    </tr>
+    @foreach (var character in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => character.name)
+            </td>
+            <td>
+                @{
+                    TechproContext db = new TechproContext();
+
+                    User user = (from u in db.Users
+                                 where u.id.Equals(character.user_id)
+                                 select u).FirstOrDefault();
+                }
+                @Html.DisplayFor(modelItem => user.username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => character.sex)
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,1145 @@
+﻿/*******************************************************************
+*             Technical Programming | CST Life No More             *
+*  --------------------------------------------------------------  *
+*  Developers: Jivanjot Brar, Shan Bains, Matt Fisher,             *
+*  Patrick Tsang, Guillaume Jacques, Aubry Fowler, and             *
+*  Taylor Dixon                                                    *
+*  --------------------------------------------------------------  *
+*  Copyright 2012                                                  *
+********************************************************************/
+
+
+
+
+/*******************************************************************
+ * COMMON COLOR CODES                                              *
+ * -----------------------------------------------------------------
+ * #CC6600 - Orange                                                *
+ * #902900 - Orange, brownish Color                                *
+ * #dd8800 - Light orange used in the button hover effect          *
+ * #393939 - Hover for friend page nav                             *
+ *******************************************************************/
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Candara";
+}
+
+/*GENERAL STYLE
+-------------------------------------------------------------------*/
+body /******BODY TAG******/
+{
+    background-image: url("../Images/bg_backall.png");
+    background-repeat: repeat;
+}
+
+#body /******DIV WITH ID BODY******/
+{
+    clear: both;
+    padding-bottom: 15px;
+}
+
+.content-wrapper
+{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header, footer, hgroup, nav, section
+{
+    /*display: block;*/
+}
+
+header
+{
+    background-color: #CC6600;
+    height: 120px;
+    border-bottom: 4px solid #902900;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.float-right
+{
+    float: right;
+}
+
+.site-title
+{
+    margin-top: 30px;
+    width: 250px;
+}
+
+footer
+{
+    text-align: center;
+    color: #999999;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
+
+.links  
+{
+    color:#FFF;
+}
+
+/* LOGIN 
+-----------------------------------------------------------*/
+#login
+{
+    float: right;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #902900;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+    #login h4
+    {
+        display: block;
+        float: left;
+        margin: 0 5px 5px 5px;
+        border-radius: 8px;
+        width: 80px;
+    }
+
+        #login h4:hover
+        {
+            background-color: #DD8706;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            -webkit-box-shadow: inset 0px 0px 8px 2px rgba(255, 255, 255, .6);
+            box-shadow: inset 0px 0px 8px 2px rgba(255, 255, 255, .6);
+        }
+
+        #login h4 a
+        {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+            #login h4 a:hover
+            {
+                color: #000000;
+            }
+
+/* MENU
+----------------------------------------------------------*/
+nav
+{
+    margin-top: 68px;
+}
+
+ul#menu
+{
+    list-style: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-top: 13px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+    min-width: 780px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #902900;
+    overflow: auto;
+}
+
+    ul#menu li.menuItems
+    {
+        display: block;
+        float: left;
+        background-color: #CC6600;
+        width: 120px;
+        line-height: 30px;
+        height: 30px;
+        border: 1px solid #CC6600;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+
+    ul#menu a
+    {
+        background: none;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    /* MENU HOVERING EFFECTS
+-------------------------------------------------------------*/
+    ul#menu li.menuItems:hover
+    {
+        background-color: #dd8800;
+        text-decoration: none;
+        border: 1px inset #CC6600;
+        border-radius: 13px;
+        -webkit-box-shadow: inset 0px 0px 8px 2px rgba(255, 255, 255, .6);
+        box-shadow: inset 0px 0px 8px 2px rgba(255, 255, 255, .6);
+    }
+
+    ul#menu a:hover
+    {
+        color: #000000;
+        text-shadow: 0px 0px 4px #FFFFFF;
+    }
+
+/* MENU END
+----------------------------------------------------------*/
+
+
+/* SHARED CSS
+------------------------------------------------------------*/
+
+.topicHeading
+{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.topicContent
+{
+    font-size: 1.2em;
+    text-indent: 25px;
+    text-align: justify;
+}
+
+.main-content
+{
+    margin-top: 30px;
+    padding: 35px;
+    background-image: url("../Images/transparent_bg.png");
+    background-repeat: repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -webkit-box-shadow: 0px 0px 50px 2px rgba(204, 102, 0, .5);
+    box-shadow: 0px 0px 50px 2px rgba(204, 102, 0, .3);
+}
+
+#content
+{
+    background-image: url("../Images/content_bg.png");
+    padding-bottom: 15px;
+    border-radius: 10px;
+    min-height: 480px; /*border: 6px solid #FFF;*/
+    overflow: auto;
+}
+
+/* SHARED CSS END
+------------------------------------------------------------*/
+
+
+/* HOME PAGE CSS
+------------------------------------------------------------*/
+#slider
+{
+    margin: 0 auto;
+    height: 450px;
+    background-color: #FFFFFF;
+}
+
+#pageContent
+{
+    margin-top: 20px;
+    background-image: url("../Images/content_bg.png");
+    background-repeat: repeat;
+}
+
+#gameInfo
+{
+    float: left;
+    width: 780px;
+    height: 200px;
+    border: 1px dashed rgba(0, 0, 0, .22);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 5px;
+}
+
+    #gameInfo #about
+    {
+        text-align: center;
+    }
+
+    #gameInfo #homeImage
+    {
+        float: left;
+        margin-right: 5px;
+    }
+
+#newsFeed
+{
+    float: right;
+    border: 1px dashed rgba(0, 0, 0, .22);
+    height: 200px;
+    width: 380px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 5px;
+}
+
+    #newsFeed #feed
+    {
+        text-align: center;
+    }
+
+div#home_news_expand
+{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    height: 400px;
+    padding: 10px;
+    background: #eeeeee;
+    color: #000000;
+    border: 10px solid #1a1a1a;
+    margin-left: -400px;
+    margin-top: -200px;
+    overflow: auto;
+    z-index: 100;
+    padding: 15px;
+}
+
+#overlay
+{
+    background-color: #000000;
+    bottom: 0;
+    display: none;
+    left: 0;
+    opacity: 0.75;
+    filter: alpha(opacity = 75); /* IE7 & 8 */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+/* HOME PAGE CSS END
+------------------------------------------------------------*/
+
+
+/* ADMIN PAGE STYLE
+-----------------------------------------------------------*/
+#admin_nav
+{
+    width: 1040px;
+    height: 40px;
+    background-image: url('../Images/page_nav_banner.gif');
+    margin-top: 10px;
+    box-shadow: -2px 3px 1px 1px rgba(0, 0, 0, .2);
+}
+
+ul#admin_menu
+{
+    list-style: none;
+    margin-left: 25px;
+    line-height: 26px;
+}
+
+    ul#admin_menu li
+    {
+        display: inline-block;
+        width: 180px;
+        text-align: center;
+        margin: 2px;
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+#admin_nav ul li:hover
+{
+    background-color: #CC6600;
+    border-radius: 40px;
+}
+
+ul#admin_menu li a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+ul#admin_menu a:hover
+{
+    color: #FFFFFF;
+}
+
+#admin_content
+{
+    margin-top: 35px;
+}
+
+/* ADMIN PAGE STYLE END
+-----------------------------------------------------------*/
+
+
+
+
+/* BEGIN FORUM LAYOUT
+-----------------------------------------------------------*/
+
+/* Styles for forum layout
+-----------------------------------------------------------*/
+.forum_tborder th, td
+{
+    padding: 6px;
+    border: 1px solid #808080;
+}
+
+.forum_tborder
+{
+    border: 1px solid #808080;
+    background-color: #DDDDDD;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.forum_thead
+{
+    width: 60%;
+}
+
+.thead
+{
+    width: 20%;
+}
+
+tr.threadrow
+{
+    background-color: #FFFFFF;
+}
+
+/* Styles for posts table
+-----------------------------------------------------------*/
+
+#forum_postcontainer
+{
+    width: 100%;
+}
+
+table#forum_poststable
+{
+    width: inherit;
+    border: 1px solid #808080;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.forum_tborder a
+{
+    color: #902900;
+}
+
+tr.forum_poststableheader
+{
+    background-color: #DDDDDD;
+}
+
+    tr.forum_poststableheader td
+    {
+        width: 100%;
+    }
+
+tr.forum_postheader
+{
+    background: #DFDFDF;
+    font-size: 0.8em;
+}
+
+tr.forum_postcontent
+{
+    background: #FFFFFF;
+    vertical-align: top;
+}
+
+td.forum_postheader_username
+{
+    vertical-align: top;
+    width: 15%;
+}
+
+td.forum_postheader_date
+{
+    width: 70%;
+}
+
+td.forum_postheader_postnumber
+{
+    width: 15%;
+    text-align: right;
+}
+
+tr.forum_postpadding
+{
+    height: 10px;
+}
+
+div#forum_forumicon
+{
+    width: 20px;
+    height: 17px;
+    background-image: url("../Images/ForumImages/ForumIcon.png");
+    float: left;
+    margin-right: 5px;
+}
+
+div#forum_statsicon
+{
+    width: 22px;
+    height: 21px;
+    background-image: url("../Images/ForumImages/StatsIcon.png");
+    float: left;
+    margin-right: 5px;
+}
+
+div#forum_speechicon
+{
+    width: 21px;
+    height: 17px;
+    background-image: url("../Images/ForumImages/SpeechIcon.png");
+    float: left;
+    margin-right: 5px;
+}
+
+p#forum_headertext
+{
+}
+
+div#forum_newthreadbutton
+{
+    width: 100px;
+    border: 1px outset #DDDDDD;
+    background-repeat: no-repeat;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+}
+
+div#forum_newthreadbuttonicon
+{
+    width: 17px;
+    height: 17px;
+    background-image: url("../Images/ForumImages/PostIcon.png");
+    float: left;
+}
+
+/* Styles for profile page
+-----------------------------------------------------------*/
+
+div.avatar
+{
+    float: left;
+    position: relative;
+    width: 30%;
+}
+
+img.avatar
+{
+    border: 2px solid #444444;
+    background-color: #DDDDDD;
+    border-radius: 2px;
+    width: 240px;
+    height: 260px;
+}
+
+#friendsList
+{
+    float: left;
+    position: relative;
+    width: 30%;
+}
+
+div.mainStats
+{
+    position: relative;
+    float: left;
+    width: 70%;
+}
+
+#title
+{
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2.title
+{
+    text-align: center;
+}
+
+td.friendImg
+{
+    border: 2px solid #444444;
+    background-color: #DDDDDD;
+    border-radius: 2px;
+}
+
+td.friendName
+{
+    width: 200px;
+    margin: auto 0;
+    padding: 2px;
+    border: 2px solid #444444;
+    background-color: #DDDDDD;
+    border-radius: 2px;
+}
+
+h3#friendlink
+{
+    width: 200px;
+    padding: 0 0 0 75px;
+}
+
+#profileTable
+{
+    width: 100%;
+}
+
+#profileButton
+{
+    width: 30%;
+    height: 20%;
+    text-decoration: underline;
+    text-align: center;
+}
+
+div.centered
+{
+    text-align: center;
+}
+
+/* END of Styles for profile page
+-----------------------------------------------------------*/
+
+div#forum_breadcrumbs
+{
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+}
+
+td.forum_postcontent_content
+{
+    padding: 10px;
+}
+
+div.forum_threaddelete
+{
+    float: right;
+}
+
+div.forum_report
+{
+    float: left;
+    width: 17px;
+    height: 13px;
+}
+
+a.forum_reportpost
+{
+    width: inherit;
+    height: inherit;
+    background-image: url("../Images/ForumImages/ReportIcon.png") no-repeat top left;
+    text-indent: -9999px;
+}
+
+.forum_threadtitle_input
+{
+    width: 600px;
+    height: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.forum_threadcontent_input
+{
+    width: 600px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.forum_newthread_fieldset
+{
+    width: 650px;
+    padding: 15px;
+}
+
+div.forum_postauthorname
+{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div.forum_postauthoravatar img
+{
+    width: 100px;
+    height: 100px;
+    border: 5px solid 000000;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#forum_editpost
+{
+    width: 600px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* END FORUM LAYOUT
+-----------------------------------------------------------*/
+
+
+/* REGISTRATION & LOGIN PAGE LAYOUT
+-----------------------------------------------------------*/
+
+#registrationPage
+{
+    padding: 30px;
+}
+
+#loginPage
+{
+    padding: 30px;
+}
+
+#registrationPage h2
+{
+    text-transform: uppercase;
+}
+
+#loginPage h2
+{
+    text-transform: uppercase;
+}
+
+.userForm table tr td
+{
+    border: 0;
+    padding: 8px;
+}
+
+    .userForm table tr td label
+    {
+        font-weight: 600;
+        text-align: left;
+    }
+
+.userForm
+{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: #EDEBE7;
+    border: 4px double #DAC99F;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+    .userForm input
+    {
+        font-size: 19px;
+    }
+
+#registerUserValue
+{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 300px;
+    margin-right: 200px;
+}
+
+/* END REGISTRATION  & LOGIN PAGE LAYOUT
+-----------------------------------------------------------*/
+
+
+/* LEADERBOARD LAYOUT
+-----------------------------------------------------------*/
+
+
+
+#leaderBoardTable table tr td, #menu table tr td
+{
+    text-align: center;
+    border: 0px;
+    border-width: 0px;
+}
+
+.odd a:link  {color: #FFFFFF;} 
+.even a:link {color: #000000;}
+.currentLoggedUser a:link  {color: #FFFFFF;} 
+
+#leaderBoardTable table td, th
+{
+    padding: 10px 20px 10px 20px;
+        
+}
+
+#leaderBoardTable table th
+{
+    background-color: #902900;
+    color: #FFFFFF;
+    font-size:large;
+    font-weight:bold;
+}
+    
+.even
+{
+    background-color: #CCCCCC;
+    font-weight:bold;
+}
+    
+.odd
+{
+    background-color: #CC6600;
+    font-weight:bold;
+    color: #FFFFFF;
+}
+.currentLoggedUser
+{
+    background-color: #902900;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+
+.leaderBoardMenu_td 
+{
+    border-style: hidden;  
+    text-decoration:none;
+    outline: none;
+    font-size:medium;
+    font-style:italic;
+    font-weight:bold;
+}
+
+
+
+
+/* END LEADERBOARD LAYOUT
+-----------------------------------------------------------*/
+
+
+/* FRIENDS LIST LAYOUT
+-----------------------------------------------------------*/
+
+/* Friends list main nav
+-----------------------------------------------------*/
+#friend_nav
+{
+    width: 1040px;
+    height: 40px;
+    background-image: url('../Images/friend_page_nav_banner.gif');
+    margin-top: 10px;
+    box-shadow: -2px 3px 1px 1px rgba(0, 0, 0, .2);
+}
+
+ul#friend_menu
+{
+    list-style: none;
+    margin-left: 25px;
+    line-height: 26px;
+}
+
+    ul#friend_menu li.friendsLayoutLink
+    {
+        display: inline-block;
+        width: 130px;
+        text-align: center;
+        margin: 2px;
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    ul#friend_menu li
+    {
+        display: inline-block;
+        margin: 2px;
+        padding: 5px;
+    }
+
+        ul#friend_menu li.friendsSearch input, ul#friend_menu li.friendsSearch select
+        {
+            font-size: 15px;
+        }
+
+#friend_nav ul li.friendsLayoutLink:hover
+{
+    background-color: #393939;
+    border-radius: 40px;
+}
+
+ul#friend_menu li.friendsLayoutLink a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+ul#friend_menu a:hover
+{
+    color: #FFFFFF;
+}
+
+#friend_content
+{
+    margin-top: 35px;
+}
+
+#friendListContent
+{
+    margin: 15px 0px 10px 20px;
+}
+
+
+
+/* Friendslist display
+-----------------------------------------------------*/
+.three-columns table tr td
+{
+    border: 0;
+}
+
+/* Friendslist 3 columns 
+-----------------------------------------------------*/
+.three-columns
+{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+    vertical-align: middle;
+    border: 2px double #666666;
+    padding: 20px;
+    background-color: #DDDDDD;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.column-left .friendName
+{
+    width: 215px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.column-left .friendImg
+{
+    padding: 5px;
+    border: 3px double #444444;
+    border-radius: 10px;
+    background-color: #BBBBBB;
+}
+
+.column-left .loggedInMessage
+{
+    color: #55c628;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.column-left .unavailableMessage
+{
+    color: #800606;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.pendingRequestMsg
+{
+    color: #c76008;
+    text-align: left;
+}
+
+div.column-left
+{
+    float: left;
+    width: 356px;
+    background-color: #DDDDDD;
+    padding: 5px;
+}
+
+div.column-right
+{
+    float: right;
+    width: 300px;
+    background-color: #DDDDDD;
+    padding: 5px;
+}
+
+div.column-middle
+{
+    margin: 0px 0px 0px 300px;
+    width: 300px;
+    background-color: #DDDDDD;
+    padding: 5px;
+}
+
+div.findFriends
+{
+    margin: 0 auto;
+    width: 1100px;
+    padding: 10px;
+    border: 2px solid #444444;
+    background-color: #DDDDDD;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+div.find-column-left1
+{
+    float: left;
+    width: 530px;
+    padding: 5px;
+    border-right: 2px solid #444444;
+}
+
+div.find-column-left2
+{
+    float: left;
+    width: 535px;
+    padding: 5px;
+    margin-left: 12px;
+}
+
+    div.find-column-left1 table tr td, div.find-column-left2 table tr td
+    {
+        border: 0;
+    }
+
+        div.find-column-left1 table tr td.friendName, div.find-column-left2 table tr td.friendName
+        {
+            width: 250px;
+            padding: 5px;
+            text-align: center;
+        }
+
+.find-column-left1 img, .find-column-left2 img
+{
+    padding: 5px;
+    border: 3px double #444444;
+    border-radius: 10px;
+    background-color: #BBBBBB;
+}
+
+/* FRIENDS LIST LAYOUT END
+-----------------------------------------------------------*/
+
+/* MESSAGING LAYOUT START
+-----------------------------------------------------*/
+
+.message_recipient select
+{
+    height: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.message_recipient input
+{
+    height: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.message_subject input
+{
+    width: 600px;
+    height: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.message_content textarea
+{
+    width: 600px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+cropTable td{border: 0px;}
+/* MESSAGING LAYOUT END
+-----------------------------------------------------*/
+
+
+
+
+/* CONTACT FORM LAYOUT
+-----------------------------------------------------*/
+
+.contactForm
+{
+    width: 550px;
+    padding: 20px;
+    background-color: #EEEEEE;
+    margin-left: 20px;
+}
+
+    .contactForm legend
+    {
+        font-size: 18px;
+    }
+
+    .contactForm .editor-label
+    {
+        font-size: 17px;
+    }
+
+    .contactForm .editor-field
+    {
+        color: #FF0000;
+        font-size: 16px;
+    }
+
+    .contactForm .submit input
+    {
+        font-size: 18px;
+        padding: 3px;
+        width: 80px;
+    }
+
+.contactForm table tr td
+{
+    border: 0px;
+}
+/* CONTACT FORM LAYOUT END
+-----------------------------------------------------*/

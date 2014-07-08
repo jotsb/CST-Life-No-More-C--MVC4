@@ -1,0 +1,99 @@
+﻿@model SimsTemplate.Models.UserMessage
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<script type="text/javascript">
+    function MessageValidate() {
+        if (document.forms["messageForm"]["recipient_id"].value == "")
+            document.getElementById("recipient_id_error").style.display = "inline";
+        else
+            document.getElementById("recipient_id_error").style.display = "none";
+
+        if (document.forms["messageForm"]["subject"].value == "")
+            document.getElementById("subject_error").style.display = "inline";
+        else
+            document.getElementById("subject_error").style.display = "none";
+
+        if (document.forms["messageForm"]["message"].value == "")
+            document.getElementById("message_error").style.display = "inline";
+        else
+            document.getElementById("message_error").style.display = "none";
+
+        return document.forms["messageForm"]["recipient_id"].value != "" && document.forms["messageForm"]["subject"].value != "" && document.forms["messageForm"]["message"].value != "";
+    }
+</script>
+
+<h2>Create</h2>
+@using (@Html.BeginForm("Create", "Message", FormMethod.Post, new { @onsubmit = "return MessageValidate();", @name = "messageForm" }))
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset style="padding: 15px; width: 650px;">
+        <legend>Send a Message</legend>
+
+        @if (!ViewBag.IsDirectMessage)
+        {
+        <div class="editor-label">
+            @Html.LabelFor(model => model.recipient_id, "To")
+        </div>
+        <div class="message_recipient">
+            @Html.DropDownList("recipient_id", String.Empty)
+            @Html.ValidationMessageFor(model => model.recipient_id)
+        </div>
+        <div id="recipient_id_error" style="color: red; display: none;">Recipient is required.</div>
+        }
+        else
+        {
+        <div class="editor-label">
+            @Html.LabelFor(model => model.recipient_id, "To")
+        </div>
+        <div class="editor-field">
+            <input type="text" readonly="readonly" value="@ViewBag.Recipient" />
+            <input class="text-box single-line" id="username_force" name="recipient_id" type="text" value="@ViewBag.RecipientID" style="display: none;" />
+        </div>
+        }
+        <div class="editor-label">
+            Subject
+        </div>
+        <div class="message_subject">
+        @if (!ViewBag.IsReply)
+        {
+            @Html.EditorFor(model => model.subject)
+        }
+        else
+        {
+            <input class="text-box single-line" id="subject" name="subject" type="text" value="@ViewBag.Subject" />
+        }
+            @Html.ValidationMessageFor(model => model.subject)
+        </div>
+        <div id="subject_error" style="color: red; display: none;">Subject is required.</div>
+
+        <div class="editor-label">
+            Message
+        </div>
+        <div class="message_content">
+        @if (!ViewBag.IsReply)
+        {
+            @Html.TextAreaFor(model => model.message, 15, 50, null)
+        }
+        else
+        {
+            <textarea Length="111" cols="50" id="message" name="message" rows="15">
+            @Html.Raw(ViewBag.Message)
+            </textarea>
+        }
+            @Html.ValidationMessageFor(model => model.message)
+        </div>
+        <div id="message_error" style="color: red; display: none;">Message is required.</div>
+
+        <p>
+            <input type="submit" value="Send" style="padding: 3px;" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -1,0 +1,57 @@
+﻿@model SimsTemplate.Models.UserMessage
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>UserMessage</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.User1.username)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.User1.username)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.User.username)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.User.username)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.datetime_sent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.datetime_sent)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.subject)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.subject)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.message)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.message)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.message_read)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.message_read)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

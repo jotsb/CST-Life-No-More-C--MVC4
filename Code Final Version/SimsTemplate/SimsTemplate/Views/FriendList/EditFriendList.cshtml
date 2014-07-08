@@ -1,0 +1,81 @@
+﻿@model IEnumerable<SimsTemplate.Models.User>
+@{
+    ViewBag.Title = "Edit Friend List";
+    Layout = "~/Views/Shared/_FriendListLayout.cshtml";
+    
+    <!-- Author: Jivanjot Brar -->
+}
+
+<!-- JavaScript for showing the confirmation box -->
+<script type="text/javascript">
+    //Confirmation box sample
+    function ConfirmationBox(name) {
+        var result = confirm("Are you sure you want to remove a friend?");
+        if (result == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+</script>
+<!-- JavaScript End -->
+
+<br />
+@using (Html.BeginForm())
+{
+    <div class="findFriends">
+        @{
+    if (Model != null)
+    {
+        int count = 0;
+        foreach (var item in Model)
+        {
+            if ((count % 2) == 0)
+            {
+            <div class="find-column-left1">
+                <table>
+                    <tr>
+                        <td class="friendImg">
+                            <a href="../ViewProfile/?id=@item.id">
+                                <img alt="Image" title="@item.firstname @item.lastname" src = "@Url.Content(item.image_url)" width="100px" height="106px" /></a>
+                        </td>
+                        <td class="friendName">
+                            <a href="../ViewProfile/?id=@item.id">@char.ToUpper(item.firstname[0])@item.firstname.Substring(1).ToLower()
+                                @char.ToUpper(item.lastname[0])@item.lastname.Substring(1).ToLower() - (@char.ToUpper(item.username[0])@item.username.Substring(1).ToLower())</a>
+                        </td>
+                        <td class="addFriendBtn">
+                            <input name="@item.id" type="submit" value="Remove" style="padding: 5px; font-family: Verdana; font-size: 12px;" onclick="javascript: return ConfirmationBox();"/>
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </div>
+            }
+            else if ((count % 2) == 1)
+            {
+            <div class="find-column-left2">
+                <table>
+                    <tr>
+                        <td class="friendImg">
+                            <a href="../ViewProfile/?id=@item.id">
+                                <img alt="Image" title="@item.firstname @item.lastname" src = "@Url.Content(item.image_url)" width="100px" height="106px" /></a>
+                        </td>
+                        <td class="friendName">
+                            <a href="../ViewProfile/?id=@item.id">@char.ToUpper(item.firstname[0])@item.firstname.Substring(1).ToLower()
+                                @char.ToUpper(item.lastname[0])@item.lastname.Substring(1).ToLower() - (@char.ToUpper(item.username[0])@item.username.Substring(1).ToLower())</a>
+                        </td>
+                        <td class="addFriendBtn">
+                            <input name="@item.id" type="submit" value="Remove" style="padding: 5px;  font-family: Verdana; font-size: 12px;" onclick="javascript: return ConfirmationBox();"/>
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </div>
+            }
+            count++;
+        }
+    }
+        }
+    </div>
+}

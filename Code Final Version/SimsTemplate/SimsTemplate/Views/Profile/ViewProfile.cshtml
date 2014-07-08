@@ -1,0 +1,336 @@
+﻿@model Dictionary<Dictionary<String, List<SimsTemplate.Models.User>>, Dictionary<String, List<SimsTemplate.Models.Character>>>
+@{
+    ViewBag.Title = "View Profile";
+}
+
+<!--
+View profile page
+author Shan Bains
+-->
+<div id="pageContent">
+    <div class="avatar">
+        @{
+            if (Model != null)
+            {
+                // store the user data into a list of users
+                var users = Model.Keys;
+                List<SimsTemplate.Models.User> currentUser = new List<SimsTemplate.Models.User>();
+                // get the current user data
+                foreach (var main in users)
+                {
+                    currentUser = main["currentUser"];
+                }
+
+                // display the avatar for the current user
+                foreach (var user in currentUser)
+                {
+                    if (user.image_url != null)
+                    {  
+            <img class="avatar" alt="@user.firstname @user.lastname" src="@Url.Content(user.image_url)" />
+                    }
+                    else
+                    { 
+            <img class="avatar" alt="@user.firstname @user.lastname" src="@Url.Content("~/Content/Images/male_default.jpg")" />
+                    }
+                }
+            }
+        }
+        <br />
+        <br />
+        <br />
+        <div id="friendsList">
+            <h3 id="friendlink">
+            </h3>
+            <br />
+            @{   if (Model != null)
+                 {
+                     // store user data into a list of users
+                     var users = Model.Keys;
+                     List<SimsTemplate.Models.User> friends = new List<SimsTemplate.Models.User>();
+
+                     // store character data into a list of characters
+                     var characters = Model.Values;
+                     List<SimsTemplate.Models.Character> otherCharacters = new List<SimsTemplate.Models.Character>();
+
+                     // get list of other characters used for a total count
+                     foreach (var c in characters)
+                     {
+                         otherCharacters = c["otherCharacters"];
+                     }
+
+                     // display the same amount of friends as characters, on profile page. 
+                     int friendCount = otherCharacters.Count;
+
+                     // get the list of the current users friends
+                     foreach (var main in users)
+                     {
+
+                         friends = main["friends"];
+
+                     }
+
+                     // count of how many friends have been displayed
+                     int count = 0;
+                     // display friends
+                     foreach (var friend in friends)
+                     {
+                         // break after count is reached
+
+                         //if they have no other characters, show 5 friends
+                         if (friendCount < 1)
+                         {
+                             friendCount = 5;
+                         }
+
+                         if (count == friendCount)
+                         {
+                             break;
+                         }
+                <table width="250px">
+                    <tr>
+                        @{
+                         if (friend.image_url != null)
+                         {  
+                            <td class="friendImg">
+                                <a href="/ViewProfile?id=@friend.id">
+                                    <img alt="Image" title="@friend.firstname @friend.lastname" src = "@Url.Content(friend.image_url)" width="50px" height="58px" /></a>
+                            </td>
+                            <td class="friendName">
+                                <a href="/ViewProfile?id=@friend.id">@char.ToUpper(friend.firstname[0])@friend.firstname.Substring(1).ToLower()
+                                    @char.ToUpper(friend.lastname[0])@friend.lastname.Substring(1).ToLower()</a>
+                            </td>
+                         }
+                         else
+                         { 
+                            <td class="friendImg">
+                                <img alt="Image" title="@friend.firstname @friend.lastname" src = "@Url.Content("~/Content/Images/male_default.jpg")" width="50px" height="58px" />
+                            </td>
+                            <td class="friendName">
+                                @char.ToUpper(friend.firstname[0])@friend.firstname.Substring(1).ToLower()
+                                @char.ToUpper(friend.lastname[0])@friend.lastname.Substring(1).ToLower()
+                            </td>
+                         }
+                        }
+                    </tr>
+                </table>
+                         count++;
+                     }
+                 }
+            }
+        </div>
+    </div>
+    <div class="mainStats">
+        @{        
+            if (Model != null)
+            {
+                // store user data into a list of users
+                var users = Model.Keys;
+                List<SimsTemplate.Models.User> currentUser2 = new List<SimsTemplate.Models.User>();
+
+                // store character data into a list of characters
+                var characters = Model.Values;
+                List<SimsTemplate.Models.Character> mainCharacter = new List<SimsTemplate.Models.Character>();
+                List<SimsTemplate.Models.Character> otherCharacters = new List<SimsTemplate.Models.Character>();
+
+                // get main and other character data for the current user
+                foreach (var c in characters)
+                {
+                    mainCharacter = c["mainCharacter"];
+                    otherCharacters = c["otherCharacters"];
+                }
+
+                // get the current users data 
+                foreach (var main in users)
+                {
+                    currentUser2 = main["currentUser"];
+                }
+
+                // display the current users information
+                foreach (var user in currentUser2)
+                {
+            <h2 id="title">
+                @user.username</h2>
+            <hr />
+            <br />
+            <p id="title">
+                User Information
+            </p>
+            <table id="profileTable">
+                <colgroup>
+                    <col width="50%" />
+                    <col width="50%" />
+                </colgroup>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        @char.ToUpper(user.firstname[0])@user.firstname.Substring(1).ToLower()
+                        @char.ToUpper(user.lastname[0])@user.lastname.Substring(1).ToLower()
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age:
+                    </td>
+                    <td>
+                        @user.age
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sex:
+                    </td>
+                    <td>
+                        @user.sex
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Location:
+                    </td>
+                    <td>
+                        @user.location
+                    </td>
+                </tr>
+            </table>
+            
+            <br /> 
+                    // display the current main characters information
+                    foreach (var main in mainCharacter)
+                    {
+                        if (main != null)
+                        { 
+            <p id="title">
+                Main Character Attributes
+            </p>
+            <table id="profileTable">
+                <colgroup>
+                    <col width="50%" />
+                    <col width="50%" />
+                </colgroup>
+                <tr>
+                    <td>
+                        Character Name:
+                    </td>
+                    <td>
+                        @main.name
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Health:
+                    </td>
+                    <td>
+                        @{int health = (((int)@main.energy + (int)@main.sanity) / 2); }
+                        @health
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Energy:
+                    </td>
+                    <td>
+                        @main.energy
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sanity:
+                    </td>
+                    <td>
+                        @main.sanity
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fun:
+                    </td>
+                    <td>
+                        @main.fun
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Currency ($):
+                    </td>
+                    <td>
+                        @main.money
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Global Score:
+                    </td>
+                    <td>
+                        @main.global_score
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Business Level:
+                    </td>
+                    <td>
+                        @main.business_level
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Job Level:
+                    </td>
+                    <td>
+                        @main.job_level
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <br />
+                        
+                        }
+                    }
+
+                    if (otherCharacters.Count > 1)
+                    { 
+                 
+            <p id="title">
+                Other Character Attributes
+            </p>
+                    }
+
+                    // display the other characters associated with the current user
+                    foreach (var others in otherCharacters)
+                    {
+                        if (others != null)
+                        { 
+            <table id="profileTable">
+                <colgroup>
+                    <col width="50%" />
+                    <col width="50%" />
+                </colgroup>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        @others.name
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Health:
+                    </td>
+                    <td>
+                        @{int health = (((int)@others.energy + (int)@others.sanity) / 2); }
+                        @health
+                    </td>
+                </tr>
+            </table> 
+            <br />
+            <br />             
+                        }
+                    }
+                }
+            }
+        }
+    </div>
+</div>

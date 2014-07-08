@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "Avatar Editor Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section CSSHead {
+    <link rel="stylesheet" href="~/Content/jquery.Jcrop.css" type="text/css" />
+}
+@section JavaScript {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.Jcrop.js")"></script>
+}
+@model SimsTemplate.Models.ViewModels.AvatarEditorModel
+
+<div id="cropContainer" style="width: 100%; border:0px;">
+    <table id="cropTable" border="0" style="width: 100%;">
+        <tr>
+            <td>
+                Display
+            </td>
+            <td>
+                Preview
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="cropDisplay" style="float: left;">
+                    <img src="@Model.Avatar.ImageUrl" id="avatarImageEditor" alt="" />
+                </div>
+            </td>
+            <td>
+                <div id="cropPreview" style="width: 260px; height: 260px; overflow: hidden; margin-left: 5px; float:left;">
+                    <img src="@Model.Avatar.ImageUrl" id="preview" alt="" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            @Html.DisplayFor(x => x.Avatar.ImageUrl)
+            </td>
+            <td>
+                <div id="mainform">
+                    @using (Html.BeginForm("Edit", "Avatar", FormMethod.Post))
+                    {
+                                 
+                        @Html.HiddenFor(x => x.Left)
+                        @Html.HiddenFor(x => x.Right)
+                        @Html.HiddenFor(x => x.Top)
+                        @Html.HiddenFor(x => x.Bottom)
+                        @Html.HiddenFor(x => x.Height)
+                        @Html.HiddenFor(x => x.Width)
+                        @Html.HiddenFor(x => x.Avatar.ImageUrl)
+                        <input id="Submit" type="submit" value="submit" />
+                    }
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript">
+
+    $(function () { //function start
+
+        $('#avatarImageEditor').Jcrop({ //start JCrop
+
+            onChange: showPreview,
+            onSelect: showPreview,
+            bgColor: 'black',
+            bgOpacity: .4,
+            setSelect: [0, 0, 100, 100],
+            aspectRatio: 1
+
+        }); //end Jcrop
+
+    });  //function end
+
+</script>
+<script type="text/javascript">
+
+    function showPreview(coords) {
+
+        $('#Top').val(coords.y);
+        $('#Left').val(coords.x);
+        $('#Bottom').val(coords.y2);
+        $('#Right').val(coords.x2);
+        $('#Height').val($('#avatarImageEditor').height());
+        $('#Width').val($('#avatarImageEditor').width());
+
+        var width = $('#avatarImageEditor').width();
+        var height = $('#avatarImageEditor').height();
+
+        var rx = 260 / coords.w;
+        var ry = 260 / coords.h;
+
+        jQuery('#preview').css({
+            width: Math.round(rx * width) + 'px',
+            height: Math.round(ry * height) + 'px',
+            marginLeft: '-' + Math.round(rx * coords.x) + 'px',
+            marginTop: '-' + Math.round(ry * coords.y) + 'px'
+        });
+
+    }
+
+</script>

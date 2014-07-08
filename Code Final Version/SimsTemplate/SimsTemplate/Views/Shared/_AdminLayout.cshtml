@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Jivanjot Brar -->
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+</hgroup>
+
+<div id="admin_nav">
+    <ul id="admin_menu">
+        <li>@Html.ActionLink("Admin Home", "Index", "Admin")</li>
+        <li>@Html.ActionLink("Add User", "DisplayAddUserForm", "Admin")</li>
+        <li>@Html.ActionLink("Add Character", "DisplayAddCharacterForm", "Admin")</li>
+        <li>@Html.ActionLink("View Characters", "DisplayCharacters", "Admin")</li>
+    </ul>
+</div>
+<div id="admin_content">
+    @RenderBody()
+</div>

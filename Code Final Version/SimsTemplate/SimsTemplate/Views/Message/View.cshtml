@@ -1,0 +1,18 @@
+﻿@model SimsTemplate.Models.UserMessage
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Message from @Model.User1.username</h2><br />
+
+<h3><span class="message_subject">Re: </span>@Model.subject</h3>
+
+<p style="width: 500px;">@Html.Raw(Model.message.Replace("\n", "</br>"))</p>
+
+<br /><br />
+
+@Html.ActionLink("Reply", "Create", new { replyPostID = Model.id})
+
+<br /><br />
+
+@Html.ActionLink("Return to Messages", "Index")

@@ -1,0 +1,27 @@
+﻿@model SimsTemplate.Models.ViewModels.AvatarViewModel
+
+@using Microsoft.Web.Helpers;
+
+<br />
+
+@ViewBag.Message
+
+<br />
+
+Image must be a JPG
+
+<br />
+
+@using (Html.BeginForm("Upload", "Avatar", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    
+    if (Model.ImageUrl != "")
+    {
+        <img src="@Model.ImageUrl"   style=" width:100px; height:100px; " alt="Upload your Avatar" />
+    }
+    
+    <br /><br />
+    @FileUpload.GetHtml(initialNumberOfFiles: 1, allowMoreFilesToBeAdded: false, includeFormTag: false, addText: "Add Files", uploadText: "Upload File")
+    <br /><br />
+    <input type="submit" name="submit" value="upload" />
+}

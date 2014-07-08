@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SimsTemplate.Models.UserMessage>
+
+@{
+    ViewBag.Title = "Messages";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            Status
+        </th>
+        <th>
+            From
+        </th>
+        <th>
+            Subject
+        </th>
+        <th>
+            Time Sent
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @(item.message_read?"Read":"Unread")
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User1.username)
+        </td>
+        <td>
+            @Html.ActionLink((string)item.subject, "View", new { id = item.id }, null)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.datetime_sent)
+        </td>
+        <td>
+        <form action="Message/Delete" method="post">
+            <input type="text" name="id" value="@item.id" style="display: none;"/>
+            <input type="submit" value="Delete" />
+        </form>
+        </td>
+    </tr>
+}
+
+</table>

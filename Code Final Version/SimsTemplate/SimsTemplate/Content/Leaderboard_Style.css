@@ -1,0 +1,127 @@
+﻿/*
+    Author: Guillaume Jacques
+*/
+
+/* LEADERBOARD LAYOUT
+-----------------------------------------------------------*/
+
+input.btn  
+{
+    color:#000;   
+    font: bold 84% 'trebuchet ms',helvetica,sans-serif;   
+    background-color:#FFF;   
+    border:1px solid;   
+    border-color:  #000 #000 #000 #000; 
+    width:75px;
+}
+
+input.tbx  
+{
+    color:#000;   
+    font: bold 84% 'trebuchet ms',helvetica,sans-serif;   
+    background-color:#FFF;   
+    border:1px solid;   
+    border-color:  #000 #000 #000 #000; 
+    width:150px;
+}
+
+select.slt  
+{
+    color:#000;   
+    font: bold 84% 'trebuchet ms',helvetica,sans-serif;   
+    background-color:#FFF;   
+    border:1px solid;   
+    border-color: #000 #000 #000 #000; 
+    width:100px;
+}
+
+select.slt1  
+{
+    color:#000;   
+    font: bold 84% 'trebuchet ms',helvetica,sans-serif;   
+    background-color:#FFF;   
+    border:1px solid;   
+    border-color: #000 #000 #000 #000; 
+    width:200px;
+}
+  
+
+#leaderBoardTable table tr td, #menu table tr td
+{
+    text-align: center;
+    border: 0px;
+    border-width: 0px;
+}
+
+.odd a:link  {color: #FFFFFF;} 
+.even a:link {color: #000000;}
+.currentLoggedUser a:link  {color: #FFFFFF;} 
+
+#leaderBoardTable table td, th
+{
+    padding: 10px 20px 10px 20px;
+        
+}
+
+#leaderBoardTable table th
+{
+    background-color: #902900;
+    color: #FFFFFF;
+    font-size:large;
+    font-weight:bold;
+}
+    
+.even
+{
+    background-color: #cccccc;
+    font-weight:bold;
+}
+    
+.odd
+{
+    background-color: #CC6600;
+    font-weight:bold;
+    color: #FFFFFF;
+}
+.currentLoggedUser
+{
+    background-color: #902900;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+
+.leaderBoardMenu_td 
+{
+    border-style: hidden;  
+    border-width:0px;
+    border:0px;
+    text-decoration:none;
+    outline: none;
+    font-size:medium;
+    font-style:italic;
+    font-weight:bold;
+}
+
+.result_td
+{
+    
+}
+
+.pos
+{
+    background-color:green;
+    color: #FFFFFF;
+    text-align:center;
+}
+
+.neg
+{
+    background-color:red;
+    color: #FFFFFF;
+    text-align:center;
+}
+
+/* END LEADERBOARD LAYOUT
+-----------------------------------------------------------*/
+

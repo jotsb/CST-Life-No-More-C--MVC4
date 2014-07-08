@@ -1,0 +1,76 @@
+﻿@model IEnumerable<SimsTemplate.Models.Character>
+@{
+    ViewBag.Title = "sortedbyMoney";
+}
+<div id="pageContent">
+    <style type="text/css">
+        table tr td
+        {
+        }
+        td, th
+        {
+            padding: 10px 20px 10px 20px;
+        }
+    </style>
+    <h2>
+        Leaderboard</h2>
+    <div id="leaderBoardTable">
+        <table>
+            <tr style="background-color: #535353; color: #FFF;">
+                <th>
+                    Rank
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Grades
+                </th>
+                <th>
+                    Money
+                </th>
+                <th>
+                    Hunger
+                </th>
+                <th>
+                    Fun
+                </th>
+                <th>
+                    Energy
+                </th>
+                <th>
+                    Bladder
+                </th>
+                <th>
+                    Global Score
+                </th>
+            </tr>
+            @{int count = 1;
+              foreach (var c in Model)
+              {
+                <tr style='background-color:@(count % 2 == 0 ? "#AAAAAA" : "#CCCCCC");'>
+                    <td>@count
+                    </td>
+                    <td>@c.name
+                    </td>
+                    <td>@c.grades
+                    </td>
+                    <td>@c.money
+                    </td>
+                    <td>@c.hunger
+                    </td>
+                    <td>@c.fun
+                    </td>
+                    <td>@c.energy
+                    </td>
+                    <td>@c.bladder
+                    </td>
+                    <td>@c.global_score
+                    </td>
+                </tr>
+                  count++;
+              }
+            }
+        </table>
+    </div>
+</div>

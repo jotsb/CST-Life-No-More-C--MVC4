@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Jivanjot Brar -->
+
+<h2>@ViewBag.Message</h2>
+<div id="pageContent">
+    <div id="friend_nav">
+        <ul id="friend_menu">
+            <li class="friendsLayoutLink">@Html.ActionLink("Friends", "Index", "FriendList")</li>
+            <li class="friendsLayoutLink">@Html.ActionLink("Add Friends", "Find", "FriendList")</li>
+            <li class="friendsLayoutLink">@Html.ActionLink("Edit Friends", "Edit", "FriendList")</li>
+            <li class="friendsSearch">@using (Html.BeginForm("Search", "FriendList"))
+                                      {<input type="text" name="friendSearchTxt" /> 
+                
+                <select name="searchMethod">
+                    <option value="name">Name</option>
+                    <option value="uname">Username</option>
+                </select>
+                
+                <input type="submit" />}</li>
+        </ul>
+
+    </div>
+    <div id="friendListContent">
+        @RenderBody()
+    </div>
+</div>

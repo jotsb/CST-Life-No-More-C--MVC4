@@ -1,0 +1,113 @@
+﻿@model Dictionary<string, List<SimsTemplate.Models.User>>
+@{
+    ViewBag.Title = "Friends List";
+    Layout = "~/Views/Shared/_FriendListLayout.cshtml";
+    
+    <!-- Author: Jivanjot Brar -->
+}
+<div class="generic_narrow">
+    <div class="three-columns">
+        @{
+            if (Model != null)
+            {
+                int count = 0;
+                var loggedInUsers = Model["online"];
+                foreach (var item in Model["friends"])
+                {
+                    if (@item != null)
+                    {
+                        if ((count % 3) == 0)
+                        {
+            <div class="column-left">
+
+                <table>
+                    <tr>
+                        <td class="friendImg">
+                            <a href="../ViewProfile/?id=@item.id">
+                                <img alt="Image" title="@item.firstname @item.lastname" src = "@Url.Content(item.image_url)" width="100px" height="106px" /></a>
+                        </td>
+                        <td class="friendName">
+                            <a href="../ViewProfile/?id=@item.id">@char.ToUpper(item.firstname[0])@item.firstname.Substring(1).ToLower()
+                                @char.ToUpper(item.lastname[0])@item.lastname.Substring(1).ToLower() - (@char.ToUpper(item.username[0])@item.username.Substring(1).ToLower())</a>
+                            @if (loggedInUsers.Contains(item))
+                            {
+                                <p class="loggedInMessage"><i>Logged In</i></p>
+                            }
+                            else
+                            {
+                                <p class="unavailableMessage"><i>Unavailable</i></p>
+                            }
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <hr />
+                <br />
+            </div>
+                            count++;
+                        }
+                        else if ((count % 3) == 1)
+                        {
+            <div class="column-left">
+
+                <table>
+                    <tr>
+                        <td class="friendImg">
+                            <a href="../ViewProfile/?id=@item.id">
+                                <img alt="Image" title="@item.firstname @item.lastname" src = "@Url.Content(item.image_url)" width="100px" height="106px" /></a>
+                        </td>
+                        <td class="friendName">
+                            <a href="../ViewProfile/?id=@item.id">@char.ToUpper(item.firstname[0])@item.firstname.Substring(1).ToLower()
+                                @char.ToUpper(item.lastname[0])@item.lastname.Substring(1).ToLower() - (@char.ToUpper(item.username[0])@item.username.Substring(1).ToLower())</a>
+                            @if (loggedInUsers.Contains(item))
+                            {
+                                <p class="loggedInMessage"><i>Logged In</i></p>
+                            }
+                            else
+                            {
+                                <p class="unavailableMessage"><i>Unavailable</i></p>
+                            }
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <hr />
+                <br />
+            </div>
+                            count++;
+                        }
+                        else if ((count % 3) == 2)
+                        {
+            <div class="column-left">
+                <table>
+                    <tr>
+                        <td class="friendImg">
+                            <a href="../ViewProfile/?id=@item.id">
+
+                                <img alt="Image" title="@item.firstname @item.lastname" src = "@Url.Content(item.image_url)" width="100px" height="106px" /></a>
+                        </td>
+                        <td class="friendName">
+                            <a href="../ViewProfile/?id=@item.id">@char.ToUpper(item.firstname[0])@item.firstname.Substring(1).ToLower()
+                                @char.ToUpper(item.lastname[0])@item.lastname.Substring(1).ToLower() - (@char.ToUpper(item.username[0])@item.username.Substring(1).ToLower())</a>
+                            @if (loggedInUsers.Contains(item))
+                            {
+                                <p class="loggedInMessage"><i>Logged In</i></p>
+                            }
+                            else
+                            {
+                                <p class="unavailableMessage"><i>Unavailable</i></p>
+                            }
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <hr />
+                <br />
+            </div>
+                            count++;
+                        }
+                    }
+                }
+            } }
+    </div>
+</div>

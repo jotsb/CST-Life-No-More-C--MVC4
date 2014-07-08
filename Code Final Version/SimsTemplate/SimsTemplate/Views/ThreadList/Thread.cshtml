@@ -1,0 +1,57 @@
+﻿@model IEnumerable<SimsTemplate.Models.ForumThread>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="forum_breadcrumbs">
+    @Html.ActionLink("Home", "Index", "Forum") / @ViewBag.SubforumName
+</div>
+@if (SimsTemplate.SessionHandler.Logon)
+{
+<a href="/AddThread/NewThread?subforumID=@ViewBag.SubforumID&;userID=@ViewBag.UserID" >
+    <div id="forum_newthreadbutton">
+        <div id="forum_newthreadbuttonicon"></div> New Thread
+    </div>
+</a>
+}
+<table class="forum_tborder">
+    <thead>
+        <tr>
+            <td class="thead_threadcol">
+                <div id="forum_forumicon"></div><p>Threads</p>
+            </td>
+            <td class="thead">
+                <div id="forum_statsicon"></div><p>Stats</p>
+            </td>
+            <td class="thead">
+                <div id="forum_speechicon"></div><p>Last Post</p>
+            </td>
+        </tr>
+    </thead>
+    <!-- loop through subforums here given by controller, not implemented yet -->
+    <tbody>
+        @foreach(var item in Model) {
+        <tr class="threadrow">
+            <td>
+                @Html.ActionLink(item.title, "Index", "Posts", new { threadID = item.id }, null)<br />
+                Thread By: @ViewBag.PostAuthors[item.id]
+                @if (SimsTemplate.SessionHandler.Role == "admin" | SimsTemplate.SessionHandler.UID == item.author_id)
+                {
+                    <div class="forum_threaddelete">
+                        @Html.ActionLink("Delete", "Delete", new { id = item.id }, null)
+                    </div>
+                }
+            </td>
+            <td>Replies: <b>@ViewBag.Replies[item.id]</b><br />
+                Views: <b>@item.num_hits</b>
+            </td>
+            <td>
+                @Html.ActionLink((((string)ViewBag.LastPost[item.id].text).Length > 20) ? ((string)ViewBag.LastPost[item.id].text).Substring(0, 20) + "..." : (string)ViewBag.LastPost[item.id].text, "Index", "Posts", new { threadID = ViewBag.LastPost[item.id].thread_id }, null)<br />
+                by @Html.ActionLink((string)ViewBag.Users[ViewBag.LastPost[item.id].author_id], "Index", "ViewProfile", new { id = ViewBag.LastPost[item.id].author_id }, null)
+            </td>
+        </tr>
+        }
+        <!-- END PLACEHOLDER -->
+    </tbody>
+
+</table>

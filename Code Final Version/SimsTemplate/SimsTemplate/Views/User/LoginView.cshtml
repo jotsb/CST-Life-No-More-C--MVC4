@@ -1,0 +1,56 @@
+﻿@model SimsTemplate.Models.ViewModels.LoginViewModel
+@{
+    ViewBag.Title = "LoginView";
+}
+<div id="loginPage">
+
+    <h2>
+        Please login using your credentials here:</h2>
+    <br />
+
+    @ViewBag.Message
+
+    <br />
+
+    @using (Html.BeginForm())
+    {
+    
+        @Html.ValidationSummary()
+    
+        <div class="userForm float-left">
+            <table>
+                <tr>
+                    <td>
+                        <label for="email">
+                            Email:</label>
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(x => x.Email)
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">
+                            Password:</label>
+                    </td>
+                    <td>
+                        @Html.PasswordFor(x => x.Password)
+                        @Html.ValidationMessageFor(model => model.Password)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="Submit" type="submit" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="float-right">
+            You have submitted:<br />
+            Password: @ViewData["password"]<br />
+            Email: @ViewData["email"]<br />
+        </div>
+    }</div>
+
+    Did you forget your password? Click @Html.ActionLink("Here", "ForgotPassword", "User")

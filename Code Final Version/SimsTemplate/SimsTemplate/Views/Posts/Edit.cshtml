@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Edit";
+}
+
+<script type="text/javascript">
+
+    function TextValidate() {
+        if (document.forms["editForm"]["postContent"].value == "") {
+            document.getElementById("postError").style.display = "block";
+            return false;
+        }
+        return true;
+    }
+
+</script>
+
+<h2>Edit</h2>
+
+@if (!ViewBag.ErrorFlag)
+{
+<form method="post" name="editForm" action="Edit" onsubmit="return TextValidate();">
+    <input name="postID" value="@ViewBag.PostID" readonly="readonly" style="display: none;" />
+    <textarea id="forum_editpost" name="postContent" cols="50" rows="10">@ViewBag.PostContent</textarea><br />
+    <p id="postError" style="display: none; color: Red;">Post content is required!</p>
+    <input id="Submit1" type="submit"
+    value="Submit" style="padding: 3px;" />
+</form>
+}
+else
+{
+    @ViewBag.Error;
+}

@@ -1,0 +1,49 @@
+﻿@model SimsTemplate.Models.FriendsList
+
+<div class="title_block">
+    Friends Online (@ViewBag.Online)
+</div>
+
+<div class="generic" >
+    <ul class="noindent">
+    @if(ViewBag.MyFavorites != null){
+    foreach (var item in ViewBag.MyFavorites)
+    {
+        <li>
+            <img alt="hello" src = ""  style="margin-right: 5px;"/>
+            @item.username
+        </li>
+    }
+        }
+    </ul>
+</div>
+
+<div class="title_block">
+    Top Friends (@ViewBag.TopFriends)
+</div>
+
+<div class="generic">
+    <table class="tri_col">
+        <tr>
+            <img alt="hello" src="~/Content/Images/Tinahely-Farm-Shop-Illama_v3.jpg" style="margin-right:4px" />
+        </tr>
+        <tr>
+            <img alt="hello" src="~/Content/Images/Tinahely-Farm-Shop-Illama_v3.jpg" style="margin-right:4px"/>
+        </tr>
+        <tr>
+            <img alt="hello" src="~/Content/Images/Tinahely-Farm-Shop-Illama_v3.jpg" style="margin-right:4px" />
+        </tr>
+
+        <tr>
+            <img alt="hello" src="~/Content/Images/Tinahely-Farm-Shop-Illama_v3.jpg" style="margin-right:4px" />
+        </tr>
+        <tr>
+            <img alt="hello" src="~/Content/Images/Tinahely-Farm-Shop-Illama_v3.jpg" style="margin-right:4px"/>
+        </tr>
+        <tr>
+            <img alt="hello" src="~/Content/Images/Tinahely-Farm-Shop-Illama_v3.jpg" style="margin-right:4px" />
+        </tr>
+
+
+    </table>
+</div>

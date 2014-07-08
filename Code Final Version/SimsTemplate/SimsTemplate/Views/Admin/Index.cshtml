@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Admin Homepage";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model IEnumerable<SimsTemplate.Models.User>
+
+<table>
+    <tr>
+        <td>First Name</td><td>Last Name</td><td>Username</td><td>Date Registered</td><td>Email Address</td><td>Role</td><td>Banned?</td>
+    </tr>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => user.firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => user.lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => user.username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => user.datetime_registered)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => user.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => user.role)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => user.is_banned)
+            </td>
+            <td>
+                <a href="/Admin/EditUser?username=@user.username&banned=@user.is_banned.ToString()">edit</a>
+            </td>
+            <td>
+                @if(user.is_banned == true)
+                {
+                    <a href="/Admin/UnBanUser?username=@user.username">unban</a>
+                }
+                else
+                {
+                    <a href="/Admin/BanUser?username=@user.username">ban</a>
+                }
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "~/Views/Shared//Leaderboard_Layout.cshtml";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+</hgroup>
+
+<div id="leaderboard_nav">
+    <ul id="leaderboard_menu">
+        <li>@Html.ActionLink("Leaderboard Home", "Index", "Leaderboard")</li>
+    </ul>
+</div>
+<div id="leaderboard_content">
+    @RenderBody()
+</div>

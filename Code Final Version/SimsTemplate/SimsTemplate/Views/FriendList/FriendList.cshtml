@@ -1,0 +1,28 @@
+﻿@model IEnumerable<SimsTemplate.Models.User>
+
+<!-- Author: Jivanjot Brar -->
+
+<div id="pageContent">
+    <div class="generic_narrow">
+        <table class="three-columns">
+            @{
+                if (Model != null)
+                {
+                    int count = 0;
+                    foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            <img alt="@item.firstname @item.lastname" src = "@item.image_url"/>
+                        </td>
+                        <td>
+                            @item.username
+                        </td>
+                    </tr>
+                    }
+
+                }
+            }
+        </table>
+    </div>
+</div>

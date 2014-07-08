@@ -1,0 +1,72 @@
+﻿<!--
+    Author: Guillaume Jacques
+    view of the data presented in the leaderboard page
+-->
+
+@model IEnumerable<SimsTemplate.Models.Character>
+@Styles.Render("~/Content/Leaderboard_Style.css")
+@if (ViewBag.Compare)
+{
+    <p>
+    @ViewBag.MessageCompare
+    </p> 
+}
+<div id="leaderBoardTable">
+
+<form action="~/LeaderBoard/Compare" method="post">
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Grades</th>
+                <th>Money</th>
+                <th>Sanity</th>
+                <th>Global Score</th>
+                <th>User Profile</th>
+                <th>Message</th>
+                <th><input class="btn" type="submit" name="Compare" value="Compare"/></th>
+                
+            </tr>
+            @if(Model != null)
+            {
+                int count = 1;
+                foreach (var c in Model)
+                {
+                    if (ViewBag.user != c.id)
+                    {
+                        <tr class="@(count % 2 == 0 ? "even" : "odd")">
+                            <td>@count</td>
+                            <td>@c.name</td>
+                            <td>@c.grades</td>
+                            <td>@c.money</td>
+                            <td>@c.sanity</td>
+                            <td>@c.global_score</td>
+                            <td>@Html.ActionLink("Visit Profile", "Index", "ViewProfile", new { id = c.user_id }, null)</td>
+                            <td>@Html.ActionLink("Send Message","DirectMessage", "Message", new { username = c.User.username }, null)</td>
+                            <td><input type="checkbox" name="@c.user_id" value="@c.id" /></td>
+                            
+                        </tr>
+                            count++;
+                            continue;
+                    }
+
+                    else
+                    {                   
+                        <tr class="currentLoggedUser">
+                            <td>@ViewBag.user_Position</td>
+                            <td>@c.name</td>
+                            <td>@c.grades</td>
+                            <td>@c.money</td>
+                            <td>@c.sanity</td>
+                            <td>@c.global_score</td>
+                            <td>@Html.ActionLink("Visit Profile", "Index", "ViewProfile", new { id = c.user_id }, null)</td>
+                            <td>@Html.ActionLink("Send Message","DirectMessage", "Message", new { username = c.User.username }, null)</td>
+                            <td><input type="checkbox" name="@c.user_id" value="@c.id" /></td>
+                        </tr>
+                        count++;
+                    }
+                }
+            }
+        </table>
+    </form>    
+</div>

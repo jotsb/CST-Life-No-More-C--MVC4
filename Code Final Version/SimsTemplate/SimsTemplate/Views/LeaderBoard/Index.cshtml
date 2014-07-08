@@ -1,0 +1,17 @@
+﻿<!--
+    Author: Guillaume Jacques
+    Main view of the leaderboard page
+-->
+@model IEnumerable<SimsTemplate.Models.Character>
+@Styles.Render("~/Content/Leaderboard_Style.css")
+
+@{
+    ViewBag.Title = "Index";    
+}
+
+    <h2>Leaderboard</h2>
+    <br />
+    @Html.Partial("LeaderboardMenu")
+    @Html.Partial("LeaderboardDataView")
+    
+

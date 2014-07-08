@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "DisplayAddCharacterForm";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form name="input" action="~/Admin/AddCharacter" method="post">
+    Character Name: <input type="text" name="name" /><br />
+    Sex:
+    <select name="sex">
+        <option value="m">male</option>
+        <option value="f">female</option>
+    </select><br />
+    Username: <input type="text" name="username" /><br />
+    <input type="submit" />
+</form>

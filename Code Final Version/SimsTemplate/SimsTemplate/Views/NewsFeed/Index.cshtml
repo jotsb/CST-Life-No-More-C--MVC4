@@ -1,0 +1,40 @@
+﻿@model Dictionary<SimsTemplate.Models.ForumThread, SimsTemplate.Models.ForumPost>
+
+<script type="text/javascript">
+
+    $(function () {
+        $('a#trigger').click(function (e) {
+            $('div#home_news_expand').css('display', 'block');
+            $('div#overlay').show();
+        });
+    });
+
+    $(document).mouseup(function (e) {
+        var container = $('div#home_news_expand');
+
+        if (container.has(e.target).length === 0) {
+            container.hide();
+            $('div#overlay').hide();
+        }
+    });
+
+</script>
+
+@if (!ViewBag.NewsAvailable)
+{
+    <h3>No news available.</h3>
+}
+else
+{
+    <h3><a href="#" id="trigger">@ViewBag.ForumThread.title</a></h3>
+    <p>@Html.Raw((((string)ViewBag.ForumPost.text).Length > 200) ? ((string)ViewBag.ForumPost.text).Substring(0, 200) + "..." : ViewBag.ForumPost.text)</p>
+    <div id="home_news_expand">
+        <div class="home_news_expand_entry">
+            <h3 style="float: left;">@ViewBag.ForumThread.title</h3>
+            <p style="float: right;">@ViewBag.ForumThread.datetime_posted</p>
+            <div style="clear: both; padding: 10px;"></div>
+            <p>@Html.Raw(ViewBag.ForumPost.text)</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+}

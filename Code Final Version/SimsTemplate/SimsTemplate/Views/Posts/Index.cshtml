@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<script type="text/javascript">
+function ShowPost() {
+    var obj = document.getElementById('forum_postadd');
+    if(obj.style.display == 'none')
+        obj.style.display = 'block';
+    else
+        obj.style.display = 'none';
+};
+
+function ReportConfirm() {
+    alert("This post has been reported to the admins.");
+};
+</script>
+
+<div id="forum_breadcrumbs">
+    @Html.ActionLink("Home", "Index", "Forum") / @Html.ActionLink((string)ViewBag.SubforumName, "Thread", "ThreadList", new { id = ViewBag.SubforumID }, null) / @ViewBag.ThreadTitle
+</div>
+<h2>Posts</h2>
+
+<div id="forum_postcontainer">
+    <table id="forum_poststable">
+        <tr class="forum_poststableheader">
+            <td colspan="3" style="font-weight: bold; font-size: 1.75em;">@ViewBag.ThreadTitle</td>
+        </tr>
+        <!-- loop through posts given from controller -->
+        @foreach(SimsTemplate.Models.ForumPost item in Model) {
+            <tr id="@item.id" class="forum_postheader">
+                <td class="forum_postheader_username" rowspan="2">
+                    <div class="forum_postauthorname">
+                        @Html.ActionLink((string)ViewBag.PostAuthors[item.id], "Index", "ViewProfile", new { id = item.author_id }, null)
+                    </div>
+                    <div class="forum_postauthoravatar">
+                        <a href="@Url.Action("Index", "ViewProfile", new { id = item.author_id }, null)"><img src="@Url.Content(ViewBag.PostAuthorsAvatar[item.id])" alt="avatar" /></a>
+                    </div>
+                    </td>
+                <td class="forum_postheader_date">@item.datetime_posted</td>
+                <td class="forum_postheader_postnumber">
+                @if(SimsTemplate.SessionHandler.Logon)
+                {
+                    <div class="forum_report">
+                        @Html.ActionLink("Report", "Report", "Posts", new { id = item.id }, new { @class = "forum_reportpost", @onclick = "ReportConfirm();"})
+                    </div>
+                }
+                #@item.id</td>
+            </tr>
+            <tr class="forum_postcontent">
+                <td colspan="3">@item.text</td>
+            </tr>
+            if (SimsTemplate.SessionHandler.Role == "admin" | SimsTemplate.SessionHandler.UID == item.author_id)
+            {
+            <tr class="forum_post_admin">
+                <td>@Html.ActionLink("Edit", "Edit", "Posts", new { id = item.id }, null)
+                    @if(item.id != ViewBag.HeadPost)
+                    {
+                        @Html.ActionLink("Delete", "Delete", "Posts", new { id = item.id }, null)
+                    }
+                </td>
+            </tr>
+            
+            }
+            <tr class="forum_postpadding">
+            </tr>
+        }
+    </table>
+@if (SimsTemplate.SessionHandler.Logon)
+{
+    <a href="javascript:void(0)" onclick="ShowPost();">Post Reply</a>
+    <div id="forum_postadd" style="display: none;">
+        @Html.Action("Create", new { threadID = @ViewBag.ThreadID })
+    </div>
+    }
+</div>

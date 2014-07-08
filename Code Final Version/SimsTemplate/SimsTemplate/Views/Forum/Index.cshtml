@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Forum</h2>
+<table class="forum_tborder">
+    <thead>
+        <tr>
+            <td class="thead_threadcol">
+                <div id="forum_forumicon"></div><p class="forum_headertext">Forum</p>
+            </td>
+            <td class="thead">
+                <div id="forum_statsicon"></div><p class="forum_headertext">Stats</p>
+            </td>
+            <td class="thead">
+                <div id="forum_speechicon"></div><p class="forum_headertext">Last Post</p>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (SimsTemplate.Models.Subforum item in Model)
+    {
+        <tr class="threadrow">
+            <td>
+                @Html.ActionLink(item.title, "Thread", "ThreadList", new { id = item.id }, null)<br />
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>Threads: <b>@ViewBag.ThreadCount[item.id]</b><br />
+                Posts: <b>@ViewBag.PostCount[item.id]</b>
+            </td>
+            <td>
+            @if (ViewBag.LastPost[item.id] != null)
+            {
+                <div class="forum_lastpost">
+                @Html.ActionLink((((string)ViewBag.LastPost[item.id].text).Length > 20) ? ((string)ViewBag.LastPost[item.id].text).Substring(0, 20) + "..." : (string)ViewBag.LastPost[item.id].text, "Index", "Posts", new { threadID = ViewBag.LastPost[item.id].thread_id }, null)<br />
+                by @Html.ActionLink((string)ViewBag.Users[ViewBag.LastPost[item.id].author_id], "Index", "ViewProfile", new { id = ViewBag.LastPost[item.id].author_id }, null)
+                </div>
+            }
+            </td>
+        </tr>
+    }
+    </tbody>
+
+</table>

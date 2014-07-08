@@ -1,0 +1,12 @@
+﻿@if (SimsTemplate.SessionHandler.Logon) 
+{ 
+    <h4>@Html.ActionLink("Log out", "Index", "Logout")</h4>
+}
+else
+{
+    <h4>@Html.ActionLink("Register", "Index", "User")</h4>
+    <h4>@Html.ActionLink("Log in", "Index", "Login")</h4>    
+}
+
+
+   

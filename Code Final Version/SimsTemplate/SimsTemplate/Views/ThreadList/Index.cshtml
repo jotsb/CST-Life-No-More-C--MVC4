@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Threads</h2>
+<table class="forum_tborder">
+    <thead>
+        <tr>
+            <td class="thead_threadcol">
+                <div id="forum_forumicon"></div><p>Threads</p>
+            </td>
+            <td class="thead">
+                <div id="forum_statsicon"></div><p>Stats</p>
+            </td>
+            <td class="thead">
+                <div id="forum_speechicon"></div><p>Last Post</p>
+            </td>
+        </tr>
+    </thead>
+    <!-- loop through subforums here given by controller, not implemented yet -->
+    <!-- BEGIN PLACEHOLDER -->
+    <tbody>
+        @{ var i = 0; }
+        @for(i = 0; i < 10; i++) {
+        <tr class="threadrow">
+            <td>
+                @Html.ActionLink("Thread #" + (i + 1), "Index", "Posts")<br />
+                Thread By: username
+            </td>
+            <td>Replies: <b>123</b><br />
+                Views: <b>250,230</b>
+            </td>
+            <td>
+                @Html.ActionLink("Link to Last Post", "Index", "Posts")
+            </td>
+        </tr>
+        }
+        <!-- END PLACEHOLDER -->
+    </tbody>
+
+</table>

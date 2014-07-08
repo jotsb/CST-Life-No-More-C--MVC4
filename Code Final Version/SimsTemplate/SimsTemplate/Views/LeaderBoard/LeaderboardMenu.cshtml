@@ -1,0 +1,37 @@
+﻿<!--
+    Author: Guillaume Jacques
+    view of the menu of the leaderboard page
+-->
+<div id="leaderBoardMenu">
+    <table>
+        <tr>
+            <td class="leaderBoardMenu_td">
+                <form action="~/LeaderBoard/Sort" method="post">
+                    <fieldset>Sorting options
+                        <select class="slt" id="sort" name="sort">
+                            <option value="1">By Name</option>
+                            <option value="2">By Money</option>
+                            <option value="3">By Sanity</option>
+                            <option value="4">By Score</option>
+                            <option value="5">By Grades</option>
+                        </select>
+                        <input class="btn" type="submit" name="Sorting" value="Sort"/>
+                    </fieldset>
+                </form>
+            </td>
+            <td class="leaderBoardMenu_td">
+                <form action="~/LeaderBoard/Search" method="post">
+                    <fieldset>Search options
+                        <input class="tbx" type="text" name="search"/>
+                        <select  class="slt1" id="searchOptions" name="searchOptions">
+                            <option value="1">As Character Name</option>
+                            <option value="2">As Player Name</option>
+                        </select>
+                        <input class="btn" type="submit" name="Search" value="Search"/>
+                    </fieldset>
+                </form>
+            </td>               
+        </tr>
+    </table>
+</div>
+

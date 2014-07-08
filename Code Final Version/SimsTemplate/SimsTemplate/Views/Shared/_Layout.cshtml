@@ -1,0 +1,92 @@
+﻿<!------------------------------------------------------------------
+|                 Technical Programming | CST.Game                 |
+|------------------------------------------------------------------|
+|  Developers: Jivanjot Brar, Shan Bains, Matt Fisher,             |
+|  Patrick Tsang, Guillaume Jacques, Aubrey Fowler, and            |
+|  Taylor Dixon                                                    |
+|------------------------------------------------------------------|
+|  Copyright 2012                                                  |
+-------------------------------------------------------------------->
+
+
+<!-- ----------------------------------
+    author: Jivanjot Brar & Shan Bains
+--------------------------------------- -->
+
+@using SimsTemplate
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title | CST: Life No More</title>
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+    @Styles.Render("~/Content/Styles.css")
+    @Styles.Render("~/Content/craftyslide.css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script src="../../Scripts/MicrosoftAjax.js" type="text/javascript"></script>
+    <script src="../../Scripts/MicrosoftMvcAjax.js" type="text/javascript"></script>
+    <script src="../../Scripts/MicrosoftMvcValidation.js" type="text/javascript"></script>
+
+
+    @Scripts.Render("~/Content/jquery.Jcrop.css")
+    @RenderSection("CSSHead", required: false)
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.Jcrop.min.js")"></script>
+    @RenderSection("JavaScript", required: false)
+
+
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <p class="site-title float-left">
+                <img id="img_logo" alt="Logo" src="@Url.Content("~/Images/Logo.png")"  height="120px"/>
+            </p>
+            <div class="float-right">
+                <section id="login">
+                    @if (SimsTemplate.SessionHandler.Logon)
+                    {
+                        @Html.Action("Index", "MessageCount")
+                    }
+                    @Html.Partial("_LoginPartial")
+                </section>
+                <nav>
+                    <ul id="menu">
+                        <a href="/"><li class="menuItems">Home</li></a>
+                        @if (SessionHandler.Logon == true && SessionHandler.Role == "admin")
+                        {
+                            <a class="links" href="/Admin"><li class="menuItems">Admin</li></a>
+                        }
+                        <a class="links" href="/Profile"><li class="menuItems">Profile</li></a>
+                        <a class="links" href="/Home/Forum"><li class="menuItems">Forum</li></a>
+                        <a class="links" href="/Leaderboard"><li class="menuItems">LeaderBoard</li></a>
+                        <a class="links" href="/Chat" target="_blank"><li class="menuItems">Chat</li></a>
+                        <a class="links" href="/Home/Contact"><li class="menuItems">Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        <section class="content-wrapper main-content clear-fix">
+            <div id="content">
+                @RenderBody()
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-middle">
+                <p>
+                    Copyright &copy; @DateTime.Now.Year - Technical Programming. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

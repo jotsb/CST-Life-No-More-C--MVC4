@@ -1,0 +1,100 @@
+﻿@model Dictionary<string, List<SimsTemplate.Models.User>>
+@{
+    ViewBag.Title = "Find Friends";
+    Layout = "~/Views/Shared/_FriendListLayout.cshtml";
+    
+    <!-- Author: Jivanjot Brar -->
+}
+
+<!-- JavaScript for showing the confirmation box -->
+<script type="text/javascript">
+    //Confirmation box sample
+    function ConfirmationBox() {
+        var result = confirm("Are you sure you want to Cancel the Friend Request?");
+        if (result == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+</script>
+<!-- JavaScript End -->
+
+<br />
+@using (Html.BeginForm())
+{
+    if (Model != null)
+    {
+    <div class="findFriends">
+        @{
+        int count = 0;
+        var pendingRequests = Model["pending"];
+        foreach (var item in Model["nonFriends"])
+        {
+            if ((count % 2) == 0)
+            {
+            <div class="find-column-left1">
+                <table>
+                    <tr>
+                        <td class="friendImg">
+                            <img alt="Image" title="@item.firstname @item.lastname @item.id" src = "@Url.Content(item.image_url)" width="100px" height="106px" />
+                        </td>
+                        <td class="friendName">
+                            @char.ToUpper(item.firstname[0])@item.firstname.Substring(1).ToLower()
+                            @char.ToUpper(item.lastname[0])@item.lastname.Substring(1).ToLower() - (@char.ToUpper(item.username[0])@item.username.Substring(1).ToLower())
+                        </td>
+                        <td class="addFriendBtn">
+                            @if (pendingRequests.Contains(item))
+                            {
+                                <p class="pendingRequestMsg"><i>Pending Request</i></p>
+                                <p>
+                                    <a href="RemoveRequest/?friendID=@item.id" onclick="javascript:return ConfirmationBox();">Cancel Request</a>
+                                </p>
+                            }
+                            else
+                            {
+                                <input name="@item.id" type="submit" value="Add Friend" style="padding: 5px;  font-family: Verdana; font-size: 12px;"/>
+                            }
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </div>
+            }
+            else if ((count % 2) == 1)
+            {
+            <div class="find-column-left2">
+                <table>
+                    <tr>
+                        <td class="friendImg">
+                            <img alt="Image" title="@item.firstname @item.lastname @item.id" src = "@Url.Content(item.image_url)" width="100px" height="106px" />
+                        </td>
+                        <td class="friendName">
+                            @char.ToUpper(item.firstname[0])@item.firstname.Substring(1).ToLower()
+                            @char.ToUpper(item.lastname[0])@item.lastname.Substring(1).ToLower() - (@char.ToUpper(item.username[0])@item.username.Substring(1).ToLower())
+                        </td>
+                        <td class="addFriendBtn">
+                            @if (pendingRequests.Contains(item))
+                            {
+                                <p class="pendingRequestMsg"><i>Pending Request</i></p>
+                                <p>
+                                    <a href="RemoveRequest/?friendID=@item.id" onclick="javascript:return ConfirmationBox();">Cancel Request</a>
+                                </p>
+                            }
+                            else
+                            {
+                                <input name="@item.id" type="submit" value="Add Friend" style="padding: 5px;  font-family: Verdana; font-size: 12px;"/>
+                            }
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </div>
+            }
+            count++;
+        }
+        }
+    </div>    
+    }
+}
